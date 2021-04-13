@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:wght@700&family=Poppins:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
+
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+
+body{
+    width:95%;
+}
+
+header{
+    margin:60px auto auto 20px;
+    width:100%;
+    
+}
+
+.flex-container{
+    width:300px;
+    display: flex;
+    flex-direction: column;
+}
+
+.heading h2{
+    font-family: 'PT Serif';
+    font-size:30px;
+    margin-bottom: 20px;
+}
+
+.about h4{
+    text-transform: uppercase;
+    font-size:16px;
+    margin-bottom: 10px;
+}
+
+.about{
+    font-size: 14px;
+}
+
+.grid-container{
+    width:100%;
+    margin:0 auto;
+    margin-top:25px;
+    margin-left: 20px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap:10px;
+    position: relative;
+}
+
+.grid-item{
+    width:90%;
+    height:90%;
+    margin-bottom: 20px;
+}
+
+.two{
+    margin-top: 50px;;
+}
+
+.four{
+    margin-top: 50px;
+}
+
+.six{
+    margin-top: 50px;
+}
+
+.grid-container .grid-item img{
+    width:80%;
+    height:auto;
+}
+.grid-item p{
+    display: inline;
+    font-size:14px;
+    text-transform: uppercase;
+    font-family: 'PT Serif';
+    writing-mode: vertical-rl;
+    position: absolute;
+}
+
+.footer{
+    width:100%; 
+    text-align:center;
+    margin-top:20px;
+    color:grey;
+}
+
+.footer a{
+    color:grey;
+    font-weight: bold;
+}
+
+@media screen and (min-width:1000px) {
+    body{
+        width: 90%;
+        margin-left:100px;
+    }
+    .flex-container{
+        width:80%;
+        display: flex;
+        flex-direction: row;  
+        justify-content: space-between;   
+        margin-bottom: 80px; 
+    }
+    
+    .heading h2{
+        min-width:300px;
+    }
+
+
+    .about p{
+        width:300px;
+    }
+
+    .heading h2{
+        font-family: 'PT Serif';
+        font-size:40px;
+        margin-bottom: 20px;
+    }
+    
+    .about h4{
+        text-transform: uppercase;
+        font-size:20px;
+        margin-bottom: 10px;
+    }
+    
+    .about{
+        font-size: 14px;
+    }
+
+    .grid-container{
+        width:100%;
+        margin:0 auto;
+        margin-top:25px;
+        margin-left: 20px;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        position: relative;
+    }
+    
+    .grid-item{
+        width:90%;
+        height:90%;
+        margin-bottom: 20px;
+    }
+    
+    .grid-container .grid-item img{
+        width:70%;
+        height:auto;
+    }
+
+    .grid-item h3{
+        margin-top: 20px;
+    }
+
+    .two{
+        transform: translateY(75px);
+    }
+    
+    .five{
+        transform: translateY(150px);
+    }
+
+    .footer{
+        width:100%; 
+        text-align:center;
+        margin-top:120px;
+        color:grey;
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+    
+}
